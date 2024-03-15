@@ -1,0 +1,42 @@
+# ------------------------------------------------------------------------------
+# Supports all Python versions
+# https://www.python.org/downloads/
+
+pip>=24
+setuptools>=69.1.0
+
+stringcase>=1.2.0
+jmespath>=1.0.1
+beautifulsoup4>=4.12.3
+lark>=1.1.9
+#nltk>=3.8.1
+
+black>=24.2.0
+mdformat-gfm>=0.3.6
+
+numpy>=1.26.2
+nanoid>=2.0.0
+opensimplex>=0.4.5
+
+scikit-image>=0.22.0
+scikit-learn>=1.4.1.post1
+#torch>=2.3.0.dev20231223+cpu
+#matplotlib>=3.8.2
+ffmpeg-python>=0.2.0
+
+requests>=2.31.0
+#sanic>=23.12.1
+#sanic-ext>=23.12.0
+
+colorama>=0.4.6
+
+#PyQt6>=6.6.1
+#PyQt6-QScintilla>=2.14.1
+#PyQt6-Charts>=6.6.0
+#PyQt6-3D>=6.6.0
+
+# ------------------------------------------------------------------------------
+# Supports Python == 3.8 | 3.9 | 3.10 | 3.11
+# https://www.python.org/downloads/release/python-3118/
+
+open3d>=0.18
