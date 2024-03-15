@@ -1,0 +1,7 @@
+﻿{
+  "solutionFile": "../../../../../Submittals.Pipeline.sln",
+  "projectFile": "../../../../../src/Nf/Submittals.Pipeline.Nf.vbproj",
+  "removeNormalComments": true,
+  "removeDocumentationComments": true,
+  "indentToken": "   "
+}

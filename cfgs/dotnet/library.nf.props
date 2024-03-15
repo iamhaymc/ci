@@ -1,0 +1,11 @@
+<Project>
+
+  <!-- Import .NET Framework Library properties -->
+
+  <Import Project="_common.props" />
+  <Import Project="_version.props" />
+  <Import Project="_framework.nf.props" />
+  <Import Project="_library.packages.props" />
+  <Import Project="_library.nf.references.props" />
+
+</Project>

@@ -1,0 +1,19 @@
+<Project>
+
+  <!-- Import Modern .NET Test properties -->
+
+  <Import Project="_common.props" />
+  <Import Project="_version.props" />
+  <Import Project="_framework.props" />
+  
+  <Import Project="_test.packages.props" />
+  <Import Project="_test.nf.packages.props" />
+  
+  <!-- Standard properties -->
+
+  <PropertyGroup>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+</Project>

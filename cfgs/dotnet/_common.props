@@ -1,0 +1,55 @@
+<Project>
+
+  <!-- EXPECTS <MyComponent> -->
+
+  <!-- Custom properties -->
+
+  <PropertyGroup>
+    <MyDomain>Trane.Submittals.Pipeline</MyDomain>
+    <MyDescription>Render submittal content using SDM and AHUSub assets</MyDescription>
+    <MyCompany>Trane Technologies</MyCompany>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MyProjectDir>$(MSBuildProjectDirectory)</MyProjectDir>
+    <MySolutionDir>$([System.IO.Path]::GetDirectoryName($(MyProjectDir)))\..\</MySolutionDir>
+    <MyAssetDir>$(MySolutionDir)docs\Assets\</MyAssetDir>
+  </PropertyGroup>
+  
+  <!-- Standard properties -->
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Title>$(MyDomain).$(MyComponent)</Title>
+    <Description>$(MyDescription)</Description>
+    <Authors>$(MyCompany)</Authors>
+    <Company>$(MyCompany)</Company>
+    <Copyright>$(MyCompany)</Copyright>
+    <RootNamespace>$(MyDomain)</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>$(Title)</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <DocumentationFile />
+    <OutputType>Library</OutputType>
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <!-- Release properties -->
+  
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <Optimize>true</Optimize>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>$(OutputPath)$(Title).xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>

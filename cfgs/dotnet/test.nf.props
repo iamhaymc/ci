@@ -1,0 +1,22 @@
+<Project>
+
+  <!-- Import .NET Framework Library & Test properties -->
+
+  <Import Project="_common.props" />
+  <Import Project="_version.props" />
+  <Import Project="_framework.nf.props" />
+
+  <Import Project="_library.packages.props" />
+  <Import Project="_library.nf.references.props" />
+  
+  <Import Project="_test.packages.props" />
+  <Import Project="_test.nf.references.props" />
+
+  <!-- Standard properties -->
+
+  <PropertyGroup>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+</Project>

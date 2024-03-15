@@ -1,0 +1,15 @@
+﻿{
+  "solutionFile": "../../../../../Submittals.Pipeline.sln",
+  "projectFile": "../../../../../src/Vb/Submittals.Pipeline.Vb.vbproj",
+  "rootNamespace": "Trane.Submittals.Pipeline",
+  "workerCount": 4,
+  "deleteAlreadyConverted": false,
+  "ignoreAlreadyConverted": true,
+  "postProcess": {
+    "enable": true,
+    "removeNormalComments": true,
+    "removeDocumentationComments": true,
+    "indentToken": "   "
+  },
+  "emitOnError": true
+}

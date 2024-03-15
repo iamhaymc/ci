@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <MyComponent>Lib</MyComponent>
+  </PropertyGroup>
+
+  <Import Project="../../cfg/dotnet/library.props" />
+
+</Project>

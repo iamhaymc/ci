@@ -1,0 +1,26 @@
+<Project>
+
+  <!-- Import Modern .NET Library properties -->
+
+  <Import Project="library.props" />
+
+  <!-- Standard properties -->
+  
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageId>$(MyDomain)</PackageId>
+    <PackageOutputPath>$(MySolutionDir)dist</PackageOutputPath>
+  </PropertyGroup>
+
+  <!-- Release properties -->
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PackageIcon>tt-uplift-128.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(Configuration)' == 'Release'">
+    <None Include="$(MyAssetDir)tt-uplift-128.png" PackagePath="\" Pack="true" />
+  </ItemGroup>
+
+</Project>
